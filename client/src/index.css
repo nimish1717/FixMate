@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+    --animate-float: float 4s ease-in-out infinite;
+    --animate-float-reverse: float 5s ease-in-out infinite reverse;
+    --animate-scroll: scroll 25s linear infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50%       { transform: translateY(-12px); }
+}
+
+@keyframes scroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-33.333%); }
+}

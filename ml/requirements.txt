@@ -1,0 +1,12 @@
+torch
+torchvision
+numpy
+pandas
+matplotlib
+scikit-learn
+Pillow
+flask
+opencv-python
+kagglehub
+ultralytics
+scikit-image
