@@ -6,7 +6,8 @@ matplotlib
 scikit-learn
 Pillow
 flask
-opencv-python
+gunicorn
+opencv-python-headless
 kagglehub
 ultralytics
 scikit-image
