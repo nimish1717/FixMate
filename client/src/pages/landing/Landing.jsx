@@ -379,7 +379,7 @@ export default function Landing() {
                         </p>
                         <p className="text-xs text-white/20 font-medium">
                             Designed & built by{" "}
-                            <span className="text-white/40 font-semibold">Nischal Agarwal</span>
+                            <span className="text-white/40 font-semibold">Nimish Agarwal</span>
                         </p>
                     </div>
                 </div>

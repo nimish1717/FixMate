@@ -1,50 +1,47 @@
 import { Wrench } from "lucide-react";
 
 export default function SplashScreen({ onComplete }) {
-    return (
-        <div
-            className="splash-root"
-            onAnimationEnd={(e) => {
-                if (e.animationName === "splash-root-anim") {
-                    onComplete?.();
-                }
-            }}
-        >
-            {/* Animated Background */}
-            <div className="bg-circle bg-circle-1" />
-            <div className="bg-circle bg-circle-2" />
-            <div className="bg-grid" />
+  return (
+    <div
+      className="splash-root"
+      onAnimationEnd={(e) => {
+        if (e.animationName === "splash-root-anim") {
+          onComplete?.();
+        }
+      }}
+    >
+      {/* Animated Background */}
+      <div className="bg-circle bg-circle-1" />
+      <div className="bg-circle bg-circle-2" />
+      <div className="bg-grid" />
 
-            <div className="splash-content">
-                <div className="splash-glow-wrap">
-                    <div className="orbit orbit-1" />
-                    <div className="orbit orbit-2" />
-                    <div className="splash-glow" />
+      <div className="splash-content">
+        <div className="splash-glow-wrap">
+          <div className="orbit orbit-1" />
+          <div className="orbit orbit-2" />
+          <div className="splash-glow" />
 
-                    <div className="splash-badge">
-                        <Wrench
-                            size={42}
-                            className="text-[#0f172a] wrench-icon"
-                            strokeWidth={2.2}
-                        />
-                    </div>
-                </div>
+          <div className="splash-badge">
+            <Wrench
+              size={42}
+              className="text-[#0f172a] wrench-icon"
+              strokeWidth={2.2}
+            />
+          </div>
+        </div>
 
-                <div className="text-center mt-8">
-                    <h1 className="text-5xl font-bold text-white tracking-tight leading-none mb-3">
-                        FixKar
-                    </h1>
+        <div className="text-center mt-8">
+          <h1 className="text-5xl font-bold text-white tracking-tight leading-none mb-3">
+            FixKar
+          </h1>
 
-                    <p className="text-[11px] font-semibold text-blue-300/80 uppercase tracking-[0.28em]">
-                        Fix karo, apne ghar ke kaam
-                    </p>
-                    <p className="text-[10px] text-white/30 mt-3 tracking-widest font-medium">
-                        by Nischal Agarwal
-                    </p>
-                </div>
-            </div>
+          <p className="text-[11px] font-semibold text-blue-300/80 uppercase tracking-[0.28em]">
+            Fix karo, apne ghar ke kaam
+          </p>
+        </div>
+      </div>
 
-            <style>{`
+      <style>{`
         .splash-root{
           position:fixed;
           inset:0;
@@ -374,6 +371,6 @@ export default function SplashScreen({ onComplete }) {
         }
 
       `}</style>
-        </div>
-    );
+    </div>
+  );
 }
